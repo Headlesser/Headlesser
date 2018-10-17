@@ -1314,9 +1314,9 @@ input, select, textarea {
 		overflow-y: scroll;
 		
 		width: 100wh;
-		height: 90vh;
+		height: auto;
 		color: #fff;
-		background: linear-gradient(-45deg, #fceaff, #bcbcbc, #f4d8ff);
+		background: linear-gradient(-60deg, #c9fff6, #fceaff, #c9fff6);
 		background-size: 400% 400%;
 		-webkit-animation: Gradient 15s ease infinite;
 		-moz-animation: Gradient 15s ease infinite;
@@ -2180,6 +2180,8 @@ input, select, textarea {
 						}
 
 				}
+				
+        		
 
 /* Footer */
 
