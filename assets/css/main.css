@@ -1913,9 +1913,9 @@ input, select, textarea {
 		}
 
 /* Wrapper */
-
+/* change box width! */
 	#wrapper {
-		width: 60em;
+		width: 65em;
 		margin: 0 auto;
 		min-height: 100vh;
 		max-width: 100%;
@@ -2018,10 +2018,10 @@ input, select, textarea {
 				}
 
 			}
-
+/*Change box height!*/
 			#main > .panel.intro {
 				padding: 0;
-				height: 20em;
+				height: 30em;
 				display: -moz-flex;
 				display: -webkit-flex;
 				display: -ms-flex;
