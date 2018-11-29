@@ -2021,7 +2021,7 @@ input, select, textarea {
 /*Change box height!*/
 			#main > .panel.intro {
 				padding: 0;
-				height: 40em;
+				height: 50em;
 				display: -moz-flex;
 				display: -webkit-flex;
 				display: -ms-flex;
