@@ -1950,7 +1950,7 @@ input, select, textarea {
 
 			#wrapper {
 				padding: 3em 0;
-				max-width: calc(100% - 6em);
+				max-width: calc(100% - 8em);
 			}
 
 		}
