@@ -1413,7 +1413,7 @@ input, select, textarea {
 
 		}
 
-		@media screen and (max-width: 460px) {
+		@media screen and (max-width: 360px) {
 
 			body, input, textarea, select {
 				font-size: 11pt;
@@ -1977,7 +1977,7 @@ input, select, textarea {
 
 			#wrapper {
 				padding: 1em 0;
-				max-width: 100%;
+				max-width: 200%;
 			}
 
 		}
