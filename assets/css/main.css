@@ -1976,8 +1976,8 @@ input, select, textarea {
 		@media screen and (max-width: 360px) {
 
 			#wrapper {
-				padding: 2em 0;
-				max-width: 100%;
+				padding: 1em 0;
+				max-width: 200%;
 			}
 
 		}
