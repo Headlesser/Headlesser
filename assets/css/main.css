@@ -1316,11 +1316,12 @@ input, select, textarea {
 		width: 100wh;
 		height: auto;
 		color: #fff;
-		background: linear-gradient(-60deg, #c9fff6, #ffd6ff, #c9fff6);
+		background: #ffd6ff;
 		background-size: 400% 400%;
-		-webkit-animation: Gradient 15s ease infinite;
+		/*-webkit-animation: Gradient 15s ease infinite;
 		-moz-animation: Gradient 15s ease infinite;
 		animation: Gradient 15s ease infinite;
+		linear-gradient(-60deg, #c9fff6, #ffd6ff, #c9fff6);*/
 	}
 
 	@-webkit-keyframes Gradient {
