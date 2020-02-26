@@ -98,7 +98,7 @@ input, select, textarea {
 	}
 
 	body {
-		background: #312450;
+		background: #2f2c32; /*The base background color*/
 	}
 
 		body.is-preload *, body.is-preload *:before, body.is-preload *:after {
@@ -2553,7 +2553,7 @@ input, select, textarea {
 		}
 
 		.image.left, .image.right {
-			max-width: 40%;
+			max-width: 100%;
 		}
 
 			.image.left img, .image.right img {
@@ -3188,7 +3188,7 @@ input, select, textarea {
 /* Wrapper */
 
 	.wrapper {
-		position: relative;
+		position: relative; /*relative*/
 	}
 
 		.wrapper > .inner {
