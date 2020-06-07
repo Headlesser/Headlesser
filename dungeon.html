@@ -31,30 +31,72 @@
 					<section id="main" class="wrapper">
 						<div class="inner">
 							<h1 class="major">Enter the Dungeon</h1>
-							<p><b>Enter the Dungeon</b> is a short text adventure game made during the COVID-19 pandemic</p>
+							<p><b>Enter the Dungeon</b> is a short, solo text-adventure project I made during the COVID-19 pandemic.</p>
 							<p>Project began in February 2020 and was finished April 2020. The game can be viewed on itch.io<a href="https://headlesser.itch.io/enter-the-dungeon">here</a></p>
-							<p><b>Skills:</b></p>
-								<ul>
-									<li>Familiarized self with design, audio, and 2D art pipelines.</li>
-									<li>Designed and scripted a functional dialogue system and puzzle</li>
-									<li>Created all in-game assets</li>
-								</ul>
 								<ul class="actions">
 									<li><a href="https://headlesser.itch.io/enter-the-dungeon" class="button" target="_blank">Download on itch.io</a></li>
 								</ul>
-							<div class="box alt">
-								<div class="row gtr-uniform">
-									<div class="col-4"><span class="image fit"><img src="images/ripper.gif" alt=""/></span></div>
-									<div class="col-4"><span class="image fit"><img src="images/ripend.gif" alt="" style="width:130%;height:130%"/></span></div>
+								
+						<p><b>My work on Enter the Dungeon:</b></p>
+								<ul>
+									<li><a href="https://github.com/Headlesser/enterthedungeon/blob/master/README.md">Wrote and updated clear and concise documentation, which can be found here</a></li>
+									
+									<div class="col-4"><span class="image fit" style="width:50%;height:50%;"><img src="images/text_skeleton.gif" alt="" /></span>
+									</div>
+							
+									<li>Utilized ambient sound design, audio cues, and grungy visuals to create an unsettling atmosphere and evoke feelings of nervousness and curiosity within players</li>
+										<ul>
+											<li>Performed research on examples of other text-based games and how they utilized art and sound to maximize effectiveness</li>
+											<li>Rather than have music, I used only ambient soundtracks juxtaposed with harsh audio cues as they better enhanced the unsettling atmosphere of the dungeon and allowed for more creative liberties in the sound-mixing process.</li>
+											<li>I opted for creating multiple different audio cues (such as scraping stone or the crackling of flames) rather than a single sound to indicate something has changed to prevent breaking immersion while also providing players with increasingly effective feedback that enhanced the feeling of nervousness I wanted to portray.</li>
+											<li>I added sound cues only to key parts of the game (primarily with the 'use' action) to both clearly indicate when the player has performed some sort of changing action, but also allow the audio itself to tell its own 'story' and further enhance the unspoken lore and foreshadow later aspects of the dungeon.</li>
+											<li>I used the visuals as a means of enhancing the written text of the game by having certain parts of the image disappear or change depending on the player's actions (picking up an item, destroying a blockade, activating a key). </li>
+											<li>I used mainly white and black for the art and purposefully added color only to important aspects of the room as a way to both guide players through the puzzles, while also drawing attention to unsettling details to further enhance the experience.</li>
+										</ul>
+										
+								<div class="box alt">
+									<div class="col-4"><span class="image fit" style="width:50%;height:50%;"><img src="images/text_hallway.gif" alt="" /></span></div>
 								</div>
+										
+									<li>Built upon code to incorporate and expand support for both audio and visual functionality as well as new player commands <a href="https://github.com/Headlesser/enterthedungeon/blob/master/README.md#technical-documentation">(a write-up of the technical documentation can be found here)</a></li>
+										<ul>
+											<li>I expanded the framework of the tutorial I referenced by writing scripts for new input actions (quit, help, room, etc) to fix problems players commented on during playtesting pertaining to text-scrolling, as well as provide an immersive option to reference controls or quit the game.</li>
+											<li>I further built upon the project by allowing for image and audio support, which I did by expanding upon the 'Room' class. I added an option for any room to have a sprite and audio track assigned to it, which can be easily changed or removed for ease of implementation.</li>
+											<li>Additionally, I expanded upon the functionality of interactable objects (such as a key or torch) to allow audio cues or visual changes to occur after using them. This allowed me to incorporate more detailed audio and visual content, as well as create 'clutter' items that the player can examine, but mechanically have no use. This made the dungeon feel more organic and populated.</li>
+										</ul>
+										
+								<div class="col-4">
+									<span class="image fit" style="width:50%;height:50%;"><img src="images/text_start.gif" alt="" /></span>
+								</div>
+								</ul>
+								
+								
+							<ul style="display:table;">
+							<li>Developed a method to plan and design puzzles modularly and streamline the design process
+								<ul>
+									<li>Project was initially concepted as a point-and-click puzzle game</li>
+									<li>Needed to a way to constrain and guide the puzzle creation process</li>
+									<li>Had to be compatible with pre-existing framework</li>
+								</ul>
+							<ul>	
+							<li>Process:</li>
+								<ul>
+									<li>Took reference from previous projects to develop a 'trunk-and-branches' design method</li>
+									<li>Each puzzle section would have a 'trunk' room, with offset 'branching' rooms. The solution to the section would always be opening the door/blockade in the 'trunk' room.</li>
+									<li>Branching rooms would contain objects or keys that led closer to the item needed to unlock the trunk room</li>
+									<li>Created folders and naming schemes in editor to manage and organize assets used in each branch</li>
+								</ul>
+							<li>Results:</li>
+								<ul>
+									<li>Having a 'trunk' room gave players an obvious goal that could be presented to them immediately to prevent confusion and provide a sense of direction.</li>
+									<li>'Trunk-and-branch' puzzle structure streamlined the design process by dividing up the puzzle into manageable chunks (create an obstacle for the trunk first, then as many branches as desired to reach it).</li>
+									<li>Easy to diagram and sketch for quick brainstorming and prototyping.</li>
+									<li>Puzzles could be easily shifted into different orders by simply changing which 'trunk' room occurs first.</li>
+								</ul>
+							</ul>
+						</ul>
+								
 							</div>
-							<p><b>One of the problems I had during development was</b> how to
-							display held clues to the player and how to provide a sense of progression, which players said was very unclear during playtesting. I solved these problems by designing a diegetic UI and layered music track to add more instruments with each clue found as a way to audibly and visibly communicate the effects of the player's actions.</p>
-							<p>
-							This created a situation where the player could audibly hear their progression. That is, with each clue found, the soundtrack becomes more complex until the entire song has been 'revealed' whenever the player has successfully completed a task. The diegetic UI cut down on having to create
-							an extensive amount of menu assets given the limitations of Construct 3 Free Edition, and also made it clearer to the player what items they had on their person at any given time.</p>
-							<!--<p>... Information about WHAT I DID ... (im most proud of my solution to make dialogue work)</p>-->
-						</div>
 					</section>
 
 		<!-- Footer -->
